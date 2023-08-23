@@ -1,4 +1,4 @@
-name: Jekyll site CI
+nname: Jekyll site CI
 
 on:
   push:
@@ -12,10 +12,10 @@ jobs:
     
     steps:
       - name: Checkout code
-        run: git clone https://github.com/AshleyBoehs/online-resume.git
+        uses: actions/checkout@v2
 
       - name: Build the site in the jekyll/builder container
         run: |
           docker run \
-            -v ${{ https://github.com/AshleyBoehs/online-resume.git }}:/srv/jekyll -v ${{ https://github.com/AshleyBoehs/online-resume.git }}/_site:/srv/jekyll/_site \
+            -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
             jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
