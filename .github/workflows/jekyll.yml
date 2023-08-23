@@ -11,14 +11,19 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [16.x]  # Update Node.js version here
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        # Explicitly set the Node.js version for the action
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: 16
+          node-version: ${{ matrix.node-version }}
+          
+      - name: Install dependencies
+        run: npm install  # Adjust this command based on your project's needs
 
       - name: Build the site in the jekyll/builder container
         run: |
