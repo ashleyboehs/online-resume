@@ -16,7 +16,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        # Other configuration...
+        # Explicitly set the Node.js version for the action
+        with:
+          node-version: 16
+
       - name: Build the site in the jekyll/builder container
         run: |
           docker run \
