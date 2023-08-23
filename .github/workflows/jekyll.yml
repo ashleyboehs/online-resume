@@ -14,12 +14,8 @@ jobs:
       - name: Checkout code
         run: git clone https://github.com/AshleyBoehs/online-resume.git
 
-      - name: Build the site in custom Docker container
+      - name: Build the site in the jekyll/builder container
         run: |
           docker run \
-          -v ${{ github.workspace }}/yourrepository:/srv/jekyll -v ${{ github.workspace }}/yourrepository/_site:/srv/jekyll/_site \
-          node:16 /bin/bash -c "cd /srv/jekyll && npm install && chmod 777 . && npm run build --future"
-
-          docker run \
-          -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+            -v ${{ https://github.com/AshleyBoehs/online-resume.git }}:/srv/jekyll -v ${{ https://github.com/AshleyBoehs/online-resume.git }}/_site:/srv/jekyll/_site \
+            jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
