@@ -186,7 +186,14 @@ certificate:
   title: Courses and Books
   description: |
 
-  items: 
+  items:
+    - name: SQL Learning Path 
+      issuer: GoRails 
+      date: Current
+      link: 'https://gorails.com/episodes/sql-learning-path-getting-setup?autoplay=1'
+      description: 
+        + The basics of Structured Query Langauge using PostgreSQL and TablePlus.
+
     - name: Programming Ruby 3.2 5th edition   
       issuer: The Pragmatic Programmer
       date: 2023
