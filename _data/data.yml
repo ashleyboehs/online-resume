@@ -123,7 +123,7 @@ project:
       tags: Ruby on Rails, APIs, OAuth, HTTP, Bootstrap, and Heroku
       date: 2023.07
       description: |
-        + A buffer clone that implements user registration and sessions. Uses OAuth to connect to users Twitter accounts'. Twitter needs to update V2 to post and schedule tweets.
+        + A buffer  [clone](https://buffer.com) that implements user registration and sessions. Uses OAuth to connect to users Twitter accounts'. Twitter needs to update V2 to post and schedule tweets.
 
 skill:
   show: true
@@ -192,46 +192,47 @@ certificate:
       date: Current
       link: 'https://gorails.com/series/ruby-for-beginners'
       description: 
-        + Ruby Refresher
+        + Ruby Refresher studing strings, integers, floats, arrays, hashes, conditionals, funtions and methods, refactoring, loops and blocks, and classes.
 
     - name: SQL Learning Path 
       issuer: GoRails 
-      date: 2023
+      date: 2023.09
       link: 'https://gorails.com/episodes/sql-learning-path-getting-setup?autoplay=1'
       description: 
         + The basics of Structured Query Langauge using PostgreSQL and TablePlus.
+        + Creating and dropping databases, calculations with columns, stirng functions, where clasuses, primary and foreign keys, and insert, select, join and group by statments. 
 
     - name: Programming Ruby 3.2 5th edition   
       issuer: The Pragmatic Programmer
-      date: 2023
+      date: 2023.09
       link: 'https://pragprog.com/titles/ruby5/programming-ruby-3-2-5th-edition/'
       description: |
         + Further learned how Ruby is an object-oriented language. Most notably, Arrays, Loops, Methods, Inheritance, and Metaprogramming practices within the Ruby language. And the ways to define, test, and debug code. 
 
     - name: Agile Web Development with Rails 7
       issuer: The Pragmatic Programmer 
-      date: 2023
+      date: 2023.08
       link: 'https://pragprog.com/titles/rails7/agile-web-development-with-rails-7/'
       description: |
         + Solidified how the MVC architecture works. Built an international storefront in English and Spanish. Learned how to hotwire a side-panel cart feature using partial templates, turbo-stream, Action Cable, Websockets, and caching. 
  
     - name: Ruby on Rails for Beginners
       issuer: GoRails
-      date: 2023
+      date: 2023.07
       link: 'https://gorails.com/episodes/rails-for-beginners-part-1-installing-ruby-on-rails'
       description: |
-        + Completed Chris Oliver's "Ruby on Rails for Beginners" from start to finish. Learned how model, view, and controller work together. Created a buffer website to log in and schedule posts using a Twitter API. Explored OAuth with Omniauth - twitter 1.4, and Bootsnap.
+        + Completed Chris Oliver's "Ruby on Rails for Beginners" from start to finish. Learned how model, view, and controller work together. Created a buffer website to log in and schedule posts using a Twitter API. Explored OAuth with Omniauth, Twitter API, and Bootstrap CSS.
 
     - name: Backend Engineer
       issuer: Codecademy
-      date: 2023
+      date: 2023.07
       link: 'https://www.codecademy.com/profiles/AshleyBoehs'
       description: |
-        + Demonstrated expertise in HTML, CSS, Javascript, PostgreSQL, GitHub, API Development, Swagger, Security, Infrastructure, Scalability, and Caching techniques to enhance efficiency.
+        + Learned HTML, CSS, Javascript, PostgreSQL, GitHub, API Development, Swagger, Security, Infrastructure, Scalability, and Caching techniques to enhance efficiency.
     
     - name: Learn Ruby Course
       issuer: Codecademy
-      date: 2023
+      date: 2023.02
       link: 'https://www.codecademy.com/profiles/AshleyBoehs/certificates/1c05e0382bc5681c824c4cbe85c126fd'
       description: |
         Learned the basics of Ruby programming.
