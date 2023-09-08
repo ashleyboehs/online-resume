@@ -7,7 +7,7 @@
   <a href="https://tarrex.github.io/online-resume"><img src="https://img.shields.io/website?down_color=red&down_message=down&style=flat-square&up_color=green&up_message=up&url=https%3A%2F%2Ftarrex.github.io%2Fonline-resume" alt="Demo Website"></a>
 </p>
 
-<h4 align="center">A minimalist Jekyll theme for your resume.</h4>
+<h4 align="center">Ashley Boehs Resume</h4>
 
 ---
 
