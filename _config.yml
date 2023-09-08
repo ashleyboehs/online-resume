@@ -1,11 +1,12 @@
 # Welcome to Jekyll!
 title: Ashley Boehs Resume
+description: Motivated Ruby on Rails Engineer
 url:
 baseurl:
 
 # Sass setting
 sass:
-  sass_dir: _sass
+
   style:    compressed
 
 # Custom
