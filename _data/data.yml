@@ -189,7 +189,7 @@ certificate:
   items:
     - name: Ruby for Beginners
       issuer: GoRails
-      date: Current
+      date: 2023
       link: 'https://gorails.com/series/ruby-for-beginners'
       description: 
         + Ruby Refresher studing strings, integers, floats, arrays, hashes, conditionals, funtions and methods, refactoring, loops and blocks, and classes.
