@@ -111,6 +111,20 @@ project:
   description: |
     
   items:
+    - name: password_manager
+      link: 'https://github.com/ashleyboehs/password_manager'
+      tags: Ruby on Rails, Hotwire, Rails Tailwind-CSS, Fly.io, ActionRecord Encryption, Javascript Clipboard 
+      date: 2023.10
+      description: |
+         + A password manager built from scratch that encrypts usernames and passwords using the ActiveRecord Encryption method. Additionally utilizes a Javascript clipboard function to easliy copy usernames and passwords. Users are able to share usernames and passwords uisng a join tables function with roles that setups permissions for other users whereas the original owner owns the permissions. A demo [link]('https://blue-cloud-1078.fly.dev/') is avaiable.
+
+    - name: home_blog
+      link: 'https://github.com/ashleyboehs/home_blog'
+      tags: Ruby on Rails, Hotwire, Rails Tailwind-CSS, Amazon S3(aws), IAM, Render, pagy, ActionText, ActionStorage, Render 
+      date: 2023.09
+      description: |
+         + A blog created with Rails 7 that implements admin edit features through login. Uses S3 buckets for storage and IAM permissions security policy. Created with GoRails ["Build a Blog with Rails 7"](https://gorails.com/series/build-a-blog-with-rails-7) tutorial.A [live link](https://home-blog.onrender.com) is available.
+
     - name: depot_a
       link: 'https://github.com/ashleyboehs/depot_a'
       tags: Ruby on Rails, Hotwire, Tailwind, Docker, data validation, and unit testing.
@@ -187,6 +201,20 @@ certificate:
   description: |
 
   items:
+    - name: Password Manager in Rails
+      issuer: GoRails
+      date: 2023.09 
+      link: 'https://gorails.com/series/password-manager-with-rails-7'
+      description: 
+        + A password manager application that uses activerecord encryption and uses a javascript clipboard function.
+
+    - name: Build a Blog in Rails
+      issuer: GoRails
+      date: 2023.09
+      link: 'https://gorails.com/series/build-a-blog-with-rails-7'
+      description: 
+        + Built a blog using Rails 7 with Hotwire, Turbo, and the [Rails Tailwind-CSS gem] (https://github.com/rails/tailwindcss-rails). Used PostgreSQL as well as AWS S3 for storage features. Added pagination using [pagy](https://github.com/rails/tailwindcss-rails) and utilizes ActionText rich text features.
+
     - name: Ruby for Beginners
       issuer: GoRails
       date: 2023.09
