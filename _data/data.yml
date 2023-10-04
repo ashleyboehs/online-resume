@@ -123,7 +123,7 @@ project:
       tags: Ruby on Rails, Hotwire, Rails Tailwind-CSS, Amazon S3(aws), IAM, Render, pagy, ActionText, ActionStorage, Render 
       date: 2023.09
       description: |
-         + A blog created with Rails 7 that implements admin edit features through login. Uses S3 buckets for storage and IAM permissions security policy. Created with GoRails ["Build a Blog with Rails 7"](https://gorails.com/series/build-a-blog-with-rails-7) tutorial.A [live link](https://home-blog.onrender.com) is available.
+         + A blog created with Rails 7 that implements admin edit features through login. Uses S3 buckets for storage and IAM permissions security policy. Created with GoRails ["Build a Blog with Rails 7"](https://gorails.com/series/build-a-blog-with-rails-7) tutorial. A [live link](https://home-blog.onrender.com) is available.
 
     - name: depot_a
       link: 'https://github.com/ashleyboehs/depot_a'
@@ -137,7 +137,7 @@ project:
       tags: Ruby on Rails, APIs, OAuth, HTTP, Bootstrap, and Heroku
       date: 2023.07
       description: |
-        + A Buffer  [clone](https://buffer.com) that implements user registration and sessions. Uses OAuth to connect to users Twitter accounts'. Twitter needs to update V2 to post and schedule tweets.
+        + A Buffer [clone](https://buffer.com) that implements user registration and sessions. Uses OAuth to connect to users Twitter accounts'. Twitter needs to update V2 to post and schedule tweets.
 
 skill:
   show: true
@@ -213,7 +213,7 @@ certificate:
       date: 2023.09
       link: 'https://gorails.com/series/build-a-blog-with-rails-7'
       description: 
-        + Built a blog using Rails 7 with Hotwire, Turbo, and the [Rails Tailwind-CSS gem] (https://github.com/rails/tailwindcss-rails). Used PostgreSQL as well as AWS S3 for storage features. Added pagination using [pagy](https://github.com/rails/tailwindcss-rails) and utilizes ActionText rich text features.
+        + Built a blog using Rails 7 with Hotwire, Turbo, and the [Rails Tailwind-CSS gem](https://github.com/rails/tailwindcss-rails). Used PostgreSQL as well as AWS S3 for storage features. Added pagination using [pagy](https://github.com/rails/tailwindcss-rails) and utilizes ActionText rich text features.
 
     - name: Ruby for Beginners
       issuer: GoRails
