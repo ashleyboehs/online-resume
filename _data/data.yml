@@ -206,7 +206,7 @@ certificate:
       date: 2023.09 
       link: 'https://gorails.com/series/password-manager-with-rails-7'
       description: 
-        + A password manager application that uses activerecord encryption and uses a javascript clipboard function.
+        + A password manager application that uses Activerecord encryption and uses a javascript clipboard function.
 
     - name: Build a Blog in Rails
       issuer: GoRails
@@ -227,8 +227,7 @@ certificate:
       date: 2023.09
       link: 'https://gorails.com/episodes/sql-learning-path-getting-setup?autoplay=1'
       description: 
-        + The basics of Structured Query Langauge using PostgreSQL and TablePlus.
-        + Creating and dropping databases, calculations with columns, stirng functions, where clasuses, primary and foreign keys, and insert, select, join and group by statments. 
+        + The basics of Structured Query Langauge using PostgreSQL and TablePlus. Creating and dropping databases, calculations with columns, string functions, where clauses, primary and foreign keys, and insert, select, join and group by statments. 
 
     - name: Programming Ruby 3.2 5th edition   
       issuer: The Pragmatic Programmer
