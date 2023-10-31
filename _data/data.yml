@@ -88,7 +88,7 @@ profile:
    
 experience:
   show: true
-  order: 2
+  order: 3
   title: Experiences
   description: |
 
@@ -106,11 +106,17 @@ experience:
 
 project:
   show: true
-  order: 3
+  order: 2
   title: Projects
   description: |
     
   items:
+    - name: url_shortener
+      link: 'https://github.com/ashleyboehs/url_shortener'
+      tags: Ruby on Rails, Tailwind-CSS, Base62, Devise, GitHub Actions CI/CD, Pagination, Metadata, Hatchbox.io 
+      date: 2023.10
+      description: |
+         + A URL shortener that uses Base62 decoding and enables users to view analytics. A demo [link]('https://12ezx.hatchboxapp.com') is avaiable.
     - name: password_manager
       link: 'https://github.com/ashleyboehs/password_manager'
       tags: Ruby on Rails, Hotwire, Rails Tailwind-CSS, Fly.io, ActionRecord Encryption, Javascript Clipboard 
@@ -201,33 +207,12 @@ certificate:
   description: |
 
   items:
-    - name: Password Manager in Rails
+    - name: GoRails Learning Path cohort-2
       issuer: GoRails
-      date: 2023.09 
-      link: 'https://gorails.com/series/password-manager-with-rails-7'
+      date: 2023.10.
+      link: 'https://gorails.com/path'
       description: 
-        + A password manager application that uses Activerecord encryption and uses a javascript clipboard function.
-
-    - name: Build a Blog in Rails
-      issuer: GoRails
-      date: 2023.09
-      link: 'https://gorails.com/series/build-a-blog-with-rails-7'
-      description: 
-        + Built a blog using Rails 7 with Hotwire, Turbo, and the [Rails Tailwind-CSS gem](https://github.com/rails/tailwindcss-rails). Used PostgreSQL as well as AWS S3 for storage features. Added pagination using [pagy](https://github.com/rails/tailwindcss-rails) and utilizes ActionText rich text features.
-
-    - name: Ruby for Beginners
-      issuer: GoRails
-      date: 2023.09
-      link: 'https://gorails.com/series/ruby-for-beginners'
-      description: 
-        + Ruby Refresher studing strings, integers, floats, arrays, hashes, conditionals, funtions and methods, refactoring, loops and blocks, and classes.
-
-    - name: SQL Learning Path 
-      issuer: GoRails 
-      date: 2023.09
-      link: 'https://gorails.com/episodes/sql-learning-path-getting-setup?autoplay=1'
-      description: 
-        + The basics of Structured Query Langauge using PostgreSQL and TablePlus. Creating and dropping databases, calculations with columns, string functions, where clauses, primary and foreign keys, and insert, select, join and group by statments. 
+        + A Ruby on Rails Path that built projects using Ruby, Rails 7, Turbo, SQL,  Turbo, AWS S3, Tailwind-CSS, ActionText, ActiveStorage, ActiveRecord Encryption, pagination, GitHub Actions CI/CD.
 
     - name: Programming Ruby 3.2 5th edition   
       issuer: The Pragmatic Programmer
@@ -243,13 +228,6 @@ certificate:
       description: |
         + Solidified how the MVC architecture works. Built an international storefront in English and Spanish. Learned how to hotwire a side-panel cart feature using partial templates, turbo-stream, Action Cable, Websockets, and caching. 
  
-    - name: Ruby on Rails for Beginners
-      issuer: GoRails
-      date: 2023.07
-      link: 'https://gorails.com/episodes/rails-for-beginners-part-1-installing-ruby-on-rails'
-      description: |
-        + Completed Chris Oliver's "Ruby on Rails for Beginners" from start to finish. Learned how model, view, and controller work together. Created a buffer website to log in and schedule posts using a Twitter API. Explored OAuth with Omniauth, Twitter API, and Bootstrap CSS.
-
     - name: Backend Engineer
       issuer: Codecademy
       date: 2023.07
