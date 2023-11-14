@@ -116,7 +116,8 @@ project:
       tags: Ruby on Rails, Tailwind-CSS, Base62, Devise, GitHub Actions CI/CD, Pagination, Metadata, Hatchbox.io 
       date: 2023.10
       description: |
-         + A URL shortener that uses Base62 decoding and enables users to view analytics. A demo [link]('https://12ezx.hatchboxapp.com') is avaiable.
+         + A URL shortener that uses Base62 encryption and enables users to view analytics. A demo [link]('https://12ezx.hatchboxapp.com') is avaiable.
+
     - name: password_manager
       link: 'https://github.com/ashleyboehs/password_manager'
       tags: Ruby on Rails, Hotwire, Rails Tailwind-CSS, Fly.io, ActionRecord Encryption, Javascript Clipboard 
@@ -152,27 +153,22 @@ skill:
   description: |
 
   items:
-    - name: Ruby on Rails
-      level: 3
-    - name: HTML
-      level: 3
-    - name: CSS
-      level: 2
-    - name: Javascript
-      level: 2
-    - name: PostgreSQL
-      level: 3
-    - name: GitHub
-      level: 3
-    - name: API Development
-      level: 3
-    - name: Scalability
-      level: 3
-    - name: Caching
-      level: 2
 
   groups:
-    - name: Skills
+    - name: Software Skills
+      item: 
+        - Ruby on Rails
+        - HTML
+        - CSS
+        - Javascript
+        - PostgreSQL
+        - GitHub
+        - API Development
+        - Scalability
+        - Caching
+
+  
+    - name: Soft Skills
       item:
         - Self-motivated
         - Detail-oriented
