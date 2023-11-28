@@ -116,35 +116,40 @@ project:
       tags: Ruby on Rails, Tailwind-CSS, Base62, Devise, GitHub Actions CI/CD, Pagination, Metadata, Hatchbox.io 
       date: 2023.10
       description: |
-         + A URL shortener that uses Base62 encryption and enables users to view analytics. A demo [link]('https://12ezx.hatchboxapp.com') is avaiable.
+         + Learned to deploy to production, find bugs, write tests, and deploy fixes.
 
     - name: password_manager
       link: 'https://github.com/ashleyboehs/password_manager'
       tags: Ruby on Rails, Hotwire, Rails Tailwind-CSS, Fly.io, ActionRecord Encryption, Javascript Clipboard 
       date: 2023.10
       description: |
-         + A password manager built from scratch that encrypts usernames and passwords using the ActiveRecord Encryption method. Additionally utilizes a Javascript clipboard function to easliy copy usernames and passwords. Users are able to share usernames and passwords uisng a join tables function with roles that setups permissions for other users whereas the original owner owns the permissions. A demo [link]('https://blue-cloud-1078.fly.dev/') is avaiable.
+         + Learned the ActiveRecord Encryption method. 
+         + Implemented a Javascript clipboard function. 
 
     - name: home_blog
       link: 'https://github.com/ashleyboehs/home_blog'
       tags: Ruby on Rails, Hotwire, Rails Tailwind-CSS, Amazon S3(aws), IAM, Render, pagy, ActionText, ActionStorage, Render 
       date: 2023.09
       description: |
-         + A blog created with Rails 7 that implements admin edit features through login. Uses S3 buckets for storage and IAM permissions security policy. Created with GoRails ["Build a Blog with Rails 7"](https://gorails.com/series/build-a-blog-with-rails-7) tutorial. A [live link](https://home-blog.onrender.com) is available.
+       + Implemented ActiveStorage with S3 backend with CORS. 
 
     - name: depot_a
       link: 'https://github.com/ashleyboehs/depot_a'
       tags: Ruby on Rails, Hotwire, Tailwind, Docker, data validation, and unit testing.
       date: 2023.07
       description: |
-        + Created an international storefront in English and Spanish. Used turbo-stream and hotwire to accelerate cart submissions to a side panel within the application using Rails 7. Created a login and logout function from admin to add or remove items. Project completed from The Pragmatic Programmer's "Agile Web Development with Rails 7" by Sam Ruby.
-    
+        + Created an international storefront in English and Spanish. 
+        + Used turbo-stream and hotwire to accelerate cart submissions to a side panel within the application using Rails 7.
+        + Created a login and logout function from admin to add or remove items.
+
     - name: scheduled_tweets
       link: 'https://github.com/ashleyboehs/Scheduled-tweets'
       tags: Ruby on Rails, APIs, OAuth, HTTP, Bootstrap, and Heroku
       date: 2023.07
       description: |
-        + A Buffer [clone](https://buffer.com) that implements user registration and sessions. Uses OAuth to connect to users Twitter accounts'. Twitter needs to update V2 to post and schedule tweets.
+        + Learned to delpoy to production, find bugs, and deploy fixes. 
+        + Implemented user registration and sessions.
+        + Used OAuth to connect to users Twitter accounts'.
 
 skill:
   show: true
@@ -208,11 +213,11 @@ certificate:
       date: 2023.10.
       link: 'https://gorails.com/path'
       description: 
-        + A Ruby on Rails Path that built projects using Ruby, Rails 7, Turbo, SQL,  Turbo, AWS S3, Tailwind-CSS, ActionText, ActiveStorage, ActiveRecord Encryption, pagination, GitHub Actions CI/CD.
+        + A Ruby on Rails Learning Path that built projects using Ruby, Rails 7, Turbo, SQL, AWS S3, Tailwind-CSS, ActionText, ActiveStorage, ActiveRecord Encryption, pagination, GitHub Actions CI/CD.
 
     - name: Programming Ruby 3.2 5th edition   
       issuer: The Pragmatic Programmer
-      date: 2023.09
+      date: 2023.09:w
       link: 'https://pragprog.com/titles/ruby5/programming-ruby-3-2-5th-edition/'
       description: |
         + Further learned how Ruby is an object-oriented language. Most notably, Arrays, Loops, Methods, Inheritance, and Metaprogramming practices within the Ruby language. And the ways to define, test, and debug code. 
