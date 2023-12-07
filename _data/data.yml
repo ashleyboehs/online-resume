@@ -44,7 +44,7 @@ contact:
   kaggle:                  # username          | https://www.kaggle.com/username
   orcid:                   # id                | https://orcid.org/id
   figshare:                # name/id           | https://figshare.com/authors/name/id
-  codecademy:               
+  codecademy:               Ashley Boehs       | https://www.codecademy.com/profiles/AshleyBoehs
 
   # writer
   devto:                   # username          | https://dev.to/username
@@ -116,7 +116,7 @@ project:
       tags: GitHub Actions CI/CD, Pagination, Metadata, Hatchbox.io, Ruby on Rails, Tailwind-CSS, Base62, Devise  
       date: 2023.10.
       description: |
-         + Learned the proper way to deploy to production using Hatchbox.io, find bugs, write tests, and deploy fixes.
+         + Learned production deployment strategies using Hatchbox.io, find bugs, write tests, and deploy fixes.
 
     - name: password_manager
       link: 'https://github.com/ashleyboehs/password_manager'
@@ -128,7 +128,7 @@ project:
 
     - name: home_blog
       link: 'https://github.com/ashleyboehs/home_blog'
-      tags: Amazon S3(aws), IAM, Render, pagy, ActionText, ActionStorage, Render, Ruby on Rails, Hotwire, Rails Tailwind-CSS, A
+      tags: Amazon S3(aws), IAM, Render, pagy, ActionText, ActionStorage, Render, Ruby on Rails, Hotwire, Rails Tailwind-CSS
       date: 2023.09
       description: |
        + Implemented ActiveStorage with S3 backend with CORS. 
