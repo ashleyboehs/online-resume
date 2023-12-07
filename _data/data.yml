@@ -121,7 +121,7 @@ project:
     - name: password_manager
       link: 'https://github.com/ashleyboehs/password_manager'
       tags: ActionRecord Encryption, Javascript Clipboard, Ruby on Rails, Hotwire, Rails Tailwind-CSS, Fly.io,  
-      date: 2023.10
+      date: 2023.10.
       description: |
          + Learned the ActiveRecord Encryption method. 
          + Implemented a Javascript clipboard function. 
