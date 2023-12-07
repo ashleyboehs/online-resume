@@ -44,7 +44,7 @@ contact:
   kaggle:                  # username          | https://www.kaggle.com/username
   orcid:                   # id                | https://orcid.org/id
   figshare:                # name/id           | https://figshare.com/authors/name/id
-  codecademy:               Ashley Boehs      | https://www.codecademy.com/profiles/AshleyBoehs
+  codecademy:               
 
   # writer
   devto:                   # username          | https://dev.to/username
@@ -113,14 +113,14 @@ project:
   items:
     - name: url_shortener
       link: 'https://github.com/ashleyboehs/url_shortener'
-      tags: Ruby on Rails, Tailwind-CSS, Base62, Devise, GitHub Actions CI/CD, Pagination, Metadata, Hatchbox.io 
-      date: 2023.10
+      tags: GitHub Actions CI/CD, Pagination, Metadata, Hatchbox.io, Ruby on Rails, Tailwind-CSS, Base62, Devise  
+      date: 2023.10.
       description: |
-         + Learned to deploy to production, find bugs, write tests, and deploy fixes.
+         + Learned the proper way to deploy to production using Hatchbox.io, find bugs, write tests, and deploy fixes.
 
     - name: password_manager
       link: 'https://github.com/ashleyboehs/password_manager'
-      tags: Ruby on Rails, Hotwire, Rails Tailwind-CSS, Fly.io, ActionRecord Encryption, Javascript Clipboard 
+      tags: ActionRecord Encryption, Javascript Clipboard, Ruby on Rails, Hotwire, Rails Tailwind-CSS, Fly.io,  
       date: 2023.10
       description: |
          + Learned the ActiveRecord Encryption method. 
@@ -128,7 +128,7 @@ project:
 
     - name: home_blog
       link: 'https://github.com/ashleyboehs/home_blog'
-      tags: Ruby on Rails, Hotwire, Rails Tailwind-CSS, Amazon S3(aws), IAM, Render, pagy, ActionText, ActionStorage, Render 
+      tags: Amazon S3(aws), IAM, Render, pagy, ActionText, ActionStorage, Render, Ruby on Rails, Hotwire, Rails Tailwind-CSS, A
       date: 2023.09
       description: |
        + Implemented ActiveStorage with S3 backend with CORS. 
@@ -217,7 +217,7 @@ certificate:
 
     - name: Programming Ruby 3.2 5th edition   
       issuer: The Pragmatic Programmer
-      date: 2023.09:w
+      date: 2023.09
       link: 'https://pragprog.com/titles/ruby5/programming-ruby-3-2-5th-edition/'
       description: |
         + Further learned how Ruby is an object-oriented language. Most notably, Arrays, Loops, Methods, Inheritance, and Metaprogramming practices within the Ruby language. And the ways to define, test, and debug code. 
