@@ -217,7 +217,7 @@ certificate:
         + Built Autoloader from scratch.
         + Built ActiveRecord from scratch.
         + Built Rails Route Mapper from scratch.
-        + Built Rake from scratch
+        + Built Rake from scratch.
         + Learned Metaprogramming techniques, including Eigenclass or the Singleton Method.
         + Learned DSL (Domain Specific Language) and how to define methods dynamically for runtime.
 
