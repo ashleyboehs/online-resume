@@ -92,7 +92,7 @@ experience:
   title: Experiences
   description: |
 
-  items:
+  items:  
     - company: Cedar Heights Elementary School
       link: 'https://ches.woodwardps.net'
       tags: Full-time
@@ -121,7 +121,7 @@ project:
     - name: password_manager
       link: 'https://github.com/ashleyboehs/password_manager'
       tags: ActionRecord Encryption, Javascript Clipboard, Ruby on Rails, Hotwire, Rails Tailwind-CSS, Fly.io,  
-      date: 2023.10
+      date: 2023.10.
       description: |
          + Learned the ActiveRecord Encryption method. 
          + Implemented a Javascript clipboard function. 
@@ -208,11 +208,24 @@ certificate:
   description: |
 
   items:
+    - name: Advanced Ruby Behind the Magic
+      issuer: GoRails
+      date: 2024.01
+      link: 'https://courses.gorails.com/advanced-ruby-for-rails-devs?utm_source=gorails'
+      description: | 
+        + Learned Zeitwerk Autoloader. 
+        + Built Autoloader from scratch.
+        + Built ActiveRecord from scratch.
+        + Built Rails Route Mapper from scratch.
+        + Built Rake from scratch
+        + Learned Metaprogramming techniques, including Eigenclass or the Singleton Method.
+        + Learned DSL (Domain Specific Language) and how to define methods dynamically for runtime.
+
     - name: GoRails Learning Path cohort-2
       issuer: GoRails
       date: 2023.10.
       link: 'https://gorails.com/path'
-      description: 
+      description: | 
         + A Ruby on Rails Learning Path that built projects using Ruby, Rails 7, Turbo, SQL, AWS S3, Tailwind-CSS, ActionText, ActiveStorage, ActiveRecord Encryption, pagination, GitHub Actions CI/CD.
 
     - name: Programming Ruby 3.2 5th edition   
