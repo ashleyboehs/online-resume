@@ -1,6 +1,6 @@
 basic:
   name: Ashley Boehs                      # name
-  title: Backend Rails Developer           # job title
+  title: Software Engineer                 # job title
   avatar:
     show: true                       # show or hide avatar
     path: /assets/images/profile.png # avatar file path
@@ -84,15 +84,45 @@ profile:
   order: 1
   title: Profile
   description: |
-    Highly motivated Ruby on Rails Software Engineer. Committed to delivering high-quality code and driving continuous improvement through agile methodologies. Seeking an opportunity to grow and learn in a dynamic, collaborative team environment.
-   
+    Software Engineer building healthcare enrollment applications for the Centers for Medicare & Medicaid Services (CMS). Sole backend engineer on the project, owning technical decisions across Ruby on Rails development, CI/CD, security remediation, observability, and AI feature integration.
+
 experience:
   show: true
   order: 3
   title: Experiences
   description: |
 
-  items:  
+  items:
+    - company: Oddball
+      link: 'https://oddball.io'
+      tags: Full-time, Remote
+      date: 2025.06 - Present
+      role: Software Engineer I
+      location: Remote
+      description: |
+        + Built the application-side integration for an AI-powered plan filtering feature, including request validation, error handling, feature flagging, and usage monitoring. Presented the technical walkthrough at the customer's security pen test review and demoed the API at a CMS AI office hours session with AWS representatives.
+        + Implemented Solid Queue for background job processing, including Puma plugin integration, observability enhancements (logging, metrics, error handling), and process-level fixes for forked worker environments.
+        + Drove a major Rails framework upgrade plan before the customer's security team flagged the aging framework. The plan was already approved and in place when the conversation started.
+        + Investigated a monitoring tool configuration issue and made the case against building a workaround, identifying it as a structural problem requiring a joint conversation with the customer's security team and the vendor.
+        + Built an internal developer tool that walks through complex Medicare enrollment scenario matching logic step by step, reducing team dependency on manual code tracing.
+        + Added automated database migration safety checks to the CI/CD pipeline to catch risky patterns before they reach production.
+        + Identified and reported a FIPS compliance issue in the New Relic Ruby agent — a dead MD5 import that could be flagged in federal environments. Filed the issue and the fix was merged upstream (PR #3470).
+        + Joined the cross-contract security team as the only non-lead engineer, participating in security review conversations beyond direct project scope.
+
+    - company: Oddball
+      link: 'https://oddball.io'
+      tags: Full-time, Remote
+      date: 2024.06 - 2025.06
+      role: Associate Software Engineer
+      location: Remote
+      description: |
+        + Upgraded a healthcare enrollment application from Rails 7.0 to 7.1, including dependency upgrades, test framework migrations, and configuration changes for the secure hosting environment.
+        + Developed backend logic for Medicare enrollment transition scenarios and expanded automated test coverage across 16+ scenarios.
+        + Authored a discovery document comparing background job architectures to support future infrastructure decisions.
+        + Participated in three production incident responses via PagerDuty, coordinating with operations teams and CMS stakeholders on bridge calls.
+        + Continuously triaged and remediated CVEs across backend dependencies to maintain platform security compliance.
+        + Refactored legacy frontend components and improved accessibility labeling for Section 508 compliance.
+
     - company: Cedar Heights Elementary School
       link: 'https://ches.woodwardps.net'
       tags: Full-time
@@ -161,16 +191,22 @@ skill:
 
   groups:
     - name: Software Skills
-      item: 
+      item:
         - Ruby on Rails
-        - HTML
-        - CSS
-        - Javascript
+        - Ruby
         - PostgreSQL
-        - GitHub
-        - API Development
-        - Scalability
-        - Caching
+        - JavaScript
+        - React
+        - HTML/CSS
+        - AWS (ECS, Bedrock, S3)
+        - Terraform
+        - Jenkins CI/CD
+        - Docker
+        - New Relic
+        - LaunchDarkly
+        - JMeter
+        - RSpec
+        - Git/GitHub
 
   
     - name: Soft Skills
