@@ -24,6 +24,16 @@
         {%- assign prev_index = forloop.index0 | minus: 1 %}
         {%- assign prev_company = experience.items[prev_index].company %}
         {%- endif %}
+        {%- assign next_company = '' %}
+        {%- unless forloop.last %}
+        {%- assign next_index = forloop.index0 | plus: 1 %}
+        {%- assign next_company = experience.items[next_index].company %}
+        {%- endunless %}
+        {%- assign grouped = false %}
+        {%- if item.company == prev_company or item.company == next_company %}
+        {%- assign grouped = true %}
+        {%- endif %}
+
         {%- if item.company != prev_company %}
         <div class="row">
           <div class="company">
@@ -37,7 +47,9 @@
             {%- endif %}
           </div>
           <div class="date">
-            <span>{{ item.employer_date | default: item.date }}</span>
+            {%- unless grouped %}
+            <span>{{ item.date }}</span>
+            {%- endunless %}
           </div>
         </div>
         {%- endif %}
@@ -47,12 +59,7 @@
             <span>{{ item.role }}</span>
           </div>
           <div class="location">
-            {%- assign next_index = forloop.index0 | plus: 1 %}
-            {%- assign next_company = '' %}
-            {%- unless forloop.last %}
-            {%- assign next_company = experience.items[next_index].company %}
-            {%- endunless %}
-            {%- if item.employer_date or item.company == prev_company or item.company == next_company %}
+            {%- if grouped %}
             <span>{{ item.date }}</span>
             {%- else %}
             <i class="fa-solid fa-location-dot"></i>
