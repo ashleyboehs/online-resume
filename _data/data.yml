@@ -84,30 +84,34 @@ profile:
   order: 1
   title: Profile
   description: |
-    Software Engineer building healthcare enrollment applications for the Centers for Medicare & Medicaid Services (CMS). Sole backend engineer on the project, owning technical decisions across Ruby on Rails development, CI/CD, security remediation, observability, and AI feature integration.
+    Software Engineer building healthcare enrollment applications for the Centers for Medicare & Medicaid Services (CMS). Sole backend engineer on the project, owning Ruby on Rails development, background job infrastructure, CI/CD, security remediation, and observability. Open-source contributor whose Puma instrumentation shipped in New Relic's official Ruby agent.
 
 experience:
   show: true
-  order: 3
-  title: Experiences
+  order: 2
+  title: Experience
   description: |
 
   items:
     - company: Oddball
       link: 'https://oddball.io'
       tags: Full-time, Remote
+      employer_date: 2024.06 - Present
       date: 2025.06 - Present
       role: Software Engineer I
       location: Remote
       description: |
-        + Built the application-side integration for an AI-powered plan filtering feature, including request validation, error handling, feature flagging, and usage monitoring. Presented the technical walkthrough at the customer's security pen test review and demoed the API at a CMS AI office hours session with AWS representatives.
-        + Implemented Solid Queue for background job processing, including Puma plugin integration, observability enhancements (logging, metrics, error handling), and process-level fixes for forked worker environments.
-        + Drove a major Rails framework upgrade plan before the customer's security team flagged the aging framework. The plan was already approved and in place when the conversation started.
-        + Investigated a monitoring tool configuration issue and made the case against building a workaround, identifying it as a structural problem requiring a joint conversation with the customer's security team and the vendor.
-        + Built an internal developer tool that walks through complex Medicare enrollment scenario matching logic step by step, reducing team dependency on manual code tracing.
-        + Added automated database migration safety checks to the CI/CD pipeline to catch risky patterns before they reach production.
-        + Identified and reported a FIPS compliance issue in the New Relic Ruby agent — a dead MD5 import that could be flagged in federal environments. Filed the issue and the fix was merged upstream (PR #3470).
-        + Joined the cross-contract security team as the only non-lead engineer, participating in security review conversations beyond direct project scope.
+        + Sole backend engineer on the Enroll team for HealthCare.gov's enrollment application (Ruby on Rails, Puma, Solid Queue, PostgreSQL, AWS ECS, Terraform, New Relic), responsible for backend architecture, reliability, and delivery.
+        + Designed and shipped Puma server-statistics instrumentation in New Relic's official Ruby agent, resolving missing metrics in forked deployments; released in [`newrelic_rpm` 10.7.0](https://docs.newrelic.com/docs/apm/agents/ruby-agent/instrumented-gems/puma-instrumentation/) ([newrelic-ruby-agent#3578](https://github.com/newrelic/newrelic-ruby-agent/pull/3578)) and [credited by name in the release notes](https://github.com/newrelic/newrelic-ruby-agent/blob/main/CHANGELOG.md#v1070).
+        + Reported and fixed a FIPS compliance defect in the same agent — a dead MD5 import flagged in federal environments ([newrelic-ruby-agent#3470](https://github.com/newrelic/newrelic-ruby-agent/pull/3470)).
+        + Integrated CMS Marketplace/FFM APIs, strengthening timeout, retry, and failure handling and diagnosing submission timeouts that surfaced as generic consumer errors; hardened the JWT token-decode middleware authenticating API access.
+        + Migrated background processing from Que to Solid Queue and implemented queue-depth autoscaling using CloudWatch and Terraform across four environments; recovered a stalled worker after database reboots with fail-fast restart and worker health monitoring.
+        + Leading a multi-version framework modernization from Rails 7.1 to 8.1, including Rack 3 and Ruby 4 upgrades, sequenced to land ahead of a federal code freeze.
+        + Automated database migrations across five environments, adding `strong_migrations` checks and lock/statement timeouts to reduce deployment risk.
+        + Built the application-side integration for an AI-powered plan filtering feature (request validation, error handling, feature flagging, usage monitoring); presented it at the customer's security pen test review and demoed the API at a CMS AI office hours session with AWS.
+        + Built an internal developer tool that steps through complex Medicare enrollment scenario-matching logic, reducing team reliance on manual code tracing.
+        + Partnered with operations to identify a module load-order regression behind a fleet-wide 500 outage, and specified the boot-time guard that shipped to prevent recurrence.
+        + Joined the cross-contract security team as the only non-lead engineer, participating in security review across contract projects.
 
     - company: Oddball
       link: 'https://oddball.io'
@@ -116,11 +120,10 @@ experience:
       role: Associate Software Engineer
       location: Remote
       description: |
-        + Upgraded a healthcare enrollment application from Rails 7.0 to 7.1, including dependency upgrades, test framework migrations, and configuration changes for the secure hosting environment.
-        + Developed backend logic for Medicare enrollment transition scenarios and expanded automated test coverage across 16+ scenarios.
+        + Developed backend logic and RSpec coverage for Medicare enrollment transition handling, spanning nearly all of the project's 35 scenarios.
+        + Upgraded the application from Rails 7.0 to 7.1, including dependency upgrades, test framework migration, and ongoing CVE remediation across backend dependencies.
         + Authored a discovery document comparing background job architectures to support future infrastructure decisions.
         + Participated in three production incident responses via PagerDuty, coordinating with operations teams and CMS stakeholders on bridge calls.
-        + Continuously triaged and remediated CVEs across backend dependencies to maintain platform security compliance.
         + Refactored legacy frontend components and improved accessibility labeling for Section 508 compliance.
 
     - company: Cedar Heights Elementary School
@@ -130,13 +133,12 @@ experience:
       role: Music Teacher
       location: Woodward, Oklahoma
       description: |
-        + Utilized Agile methodologies to prioritize and manage multiple projects simultaneously, consistently meeting deadlines and delivering high-quality solutions.
-        + Utilized technology to enhance music education, integrating music software and online resources to create dynamic and interactive learning experiences.
-        + Collaborated with colleagues and parents to organize and participate in community events, such as music festivals and concerts, showcasing students' musical talents and promoting the importance of music education.
+        + Planned and delivered a full K-6 music curriculum, coordinating schedules, budgets, and public performances across the school year.
+        + Wrote and secured program funding: an Oklahoma Arts Council grant that brought visiting performing artists into the school, plus local grants and DonorsChoose projects that equipped the classroom with music stands, tubanos, and Orff instruments.
 
 project:
   show: true
-  order: 2
+  order: 3
   title: Projects
   description: |
     
@@ -190,32 +192,39 @@ skill:
   items:
 
   groups:
-    - name: Software Skills
+    - name: Backend
       item:
         - Ruby on Rails
         - Ruby
+        - REST API Design
         - PostgreSQL
-        - JavaScript
+        - Solid Queue / Que
+        - Python
+
+    - name: Frontend
+      item:
+        - JavaScript / TypeScript
         - React
         - HTML/CSS
-        - AWS (ECS, Bedrock, S3)
+
+    - name: Infrastructure & Delivery
+      item:
+        - AWS (ECS, S3, CloudWatch, Bedrock)
         - Terraform
-        - Jenkins CI/CD
         - Docker
-        - New Relic
-        - LaunchDarkly
-        - JMeter
-        - RSpec
+        - Jenkins CI/CD
+        - GitHub Actions
+        - Akamai
         - Git/GitHub
 
-  
-    - name: Soft Skills
+    - name: Testing & Observability
       item:
-        - Self-motivated
-        - Detail-oriented
-        - Collaborative
-        - Strong Communication Skills
-        - Problem-Solving Abilities
+        - RSpec
+        - JMeter
+        - New Relic
+        - Splunk
+        - LaunchDarkly
+
 education:
   show: true
   order: 5
@@ -227,14 +236,14 @@ education:
       link: 'https://www.swosu.edu/'
       date: 2015 - 2019
       major: Choral Education
-      degree: Master
+      degree: Master's degree
       description: |
 
     - institution: Northwestern Oklahoma State University
       link: 'https://www.nwosu.edu'
       date: 2008 - 2013
       major: Vocal Education
-      degree: Bachelor
+      degree: Bachelor's degree
       description: |
 
 certificate:

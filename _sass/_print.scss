@@ -35,4 +35,9 @@
   .footer {
     display: none !important;
   }
+
+  .experience .items .item,
+  .education .items .item {
+    break-inside: avoid !important;
+  }
 }
