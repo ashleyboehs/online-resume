@@ -6,7 +6,7 @@
 
   .wrapper {
     margin: 0;
-    padding: $spacing-unit / 2;
+    padding: 18px;
     box-shadow: none;
 
     section {
@@ -107,3 +107,14 @@
 
 /* Ex-Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1400px) {}
+
+// Breathing room between bullets on narrow screens
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    .description.markdown {
+      ul li:not(:last-child) {
+        margin-bottom: 0.45em;
+      }
+    }
+  }
+}

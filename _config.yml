@@ -1,6 +1,6 @@
 # Welcome to Jekyll!
-title: Ashley Boehs Resume
-description: Motivated Ruby on Rails Engineer
+title: Ashley Boehs | Ruby on Rails Backend Engineer
+description: Ruby on Rails backend engineer building reliable federal healthcare systems and contributing to New Relic's open-source Ruby agent.
 url:
 baseurl:
 
@@ -17,9 +17,9 @@ analytics:
   google:                   # google analytics
   cloudflare:               # cloudflare analytics
   umami:
-    script: https://u.tarrex.com/u.js                # umami analytics script src (Replace it with your own config)
-    website_id: af636e2d-31ae-46f1-9071-82b1745143a9 # umami analytics website id (Replace it with your own config)
-    domains: tarrex.github.io,tarrex.com             # umami analytics domains (Replace it with your own config)
+    script:                   # umami analytics script src
+    website_id:               # umami analytics website id
+    domains:                  # umami analytics domains
 description:
 open_graph:
   enable: true                        # enable open graph meta tags
@@ -28,7 +28,7 @@ open_graph:
 # Style
 text_direction: ltr         # text direction, 'ltr' or 'rtl'
 date_format: "%Y-%m-%d"     # date format
-theme_color: "#1DA1F2"      # your favorite theme color
+theme_color: "#0879BF"      # your favorite theme color
 contact_delimiter: "·"      # contact delimiter, '·', '/' or '|'
 section_icon: true          # section title icon, true or false
 section_title: uppercase    # section title style, 'uppercase', 'lowercase', 'capitalize' or 'none'
