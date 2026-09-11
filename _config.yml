@@ -20,7 +20,6 @@ analytics:
     script:                   # umami analytics script src
     website_id:               # umami analytics website id
     domains:                  # umami analytics domains
-description:
 open_graph:
   enable: true                        # enable open graph meta tags
   image: /assets/images/profile.png   # open graph image path
