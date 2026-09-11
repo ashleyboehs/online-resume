@@ -1,8 +1,8 @@
 basic:
   name: Ashley Boehs                      # name
-  title: Software Engineer                 # job title
+  title: Backend Engineer                  # job title
   avatar:
-    show: true                       # show or hide avatar
+    show: false                      # show or hide avatar
     path: /assets/images/profile.png # avatar file path
 
 contact:
@@ -84,7 +84,7 @@ profile:
   order: 1
   title: Profile
   description: |
-    Software Engineer building healthcare enrollment applications for the Centers for Medicare & Medicaid Services (CMS). Sole backend engineer on the project, owning Ruby on Rails development, background job infrastructure, CI/CD, security remediation, and observability. Open-source contributor whose Puma instrumentation shipped in New Relic's official Ruby agent.
+    Ruby on Rails backend engineer supporting federal healthcare enrollment systems. Sole backend engineer on HealthCare.gov's Enroll team, responsible for backend architecture, enterprise API integrations, and production reliability. Open-source contributor whose Puma instrumentation shipped in New Relic's official Ruby agent.
 
 experience:
   show: true
@@ -101,29 +101,24 @@ experience:
       location: Remote
       description: |
         + Sole backend engineer on the Enroll team for HealthCare.gov's enrollment application (Ruby on Rails, Puma, Solid Queue, PostgreSQL, AWS ECS, Terraform, New Relic), responsible for backend architecture, reliability, and delivery.
-        + Designed and shipped Puma server-statistics instrumentation in New Relic's official Ruby agent, resolving missing metrics in forked deployments; released in [`newrelic_rpm` 10.7.0](https://docs.newrelic.com/docs/apm/agents/ruby-agent/instrumented-gems/puma-instrumentation/) ([newrelic-ruby-agent#3578](https://github.com/newrelic/newrelic-ruby-agent/pull/3578)) and [credited by name in the release notes](https://github.com/newrelic/newrelic-ruby-agent/blob/main/CHANGELOG.md#v1070).
-        + Reported and fixed a FIPS compliance defect in the same agent — a dead MD5 import flagged in federal environments ([newrelic-ruby-agent#3470](https://github.com/newrelic/newrelic-ruby-agent/pull/3470)).
+        + Designed and shipped Puma server-statistics instrumentation in New Relic's official Ruby agent, resolving missing metrics in forked deployments; released in [`newrelic_rpm` 10.7.0](https://docs.newrelic.com/docs/apm/agents/ruby-agent/instrumented-gems/puma-instrumentation/) ([newrelic-ruby-agent#3578](https://github.com/newrelic/newrelic-ruby-agent/pull/3578)).
         + Integrated CMS Marketplace/FFM APIs, strengthening timeout, retry, and failure handling and diagnosing submission timeouts that surfaced as generic consumer errors; hardened the JWT token-decode middleware authenticating API access.
         + Migrated background processing from Que to Solid Queue and implemented queue-depth autoscaling using CloudWatch and Terraform across all six environments; recovered a stalled worker after database reboots with fail-fast restart and worker health monitoring.
         + Leading a multi-version framework modernization from Rails 7.1 to 8.1, including Rack 3 and Ruby 4 upgrades, sequenced to land ahead of a federal code freeze.
         + Automated database migrations across all six environments, adding `strong_migrations` checks and lock/statement timeouts to reduce deployment risk.
-        + Built the application-side integration for an AI-powered plan filtering feature (request validation, error handling, feature flagging, usage monitoring); presented it at the customer's security pen test review and demoed the API at a CMS AI office hours session with AWS.
-        + Built an internal developer tool that steps through complex Medicare enrollment scenario-matching logic, reducing team reliance on manual code tracing.
         + Partnered with operations to identify a module load-order regression behind a fleet-wide 500 outage, and specified the boot-time guard that shipped to prevent recurrence.
         + Joined the cross-contract security team as the only non-lead engineer, participating in security review across contract projects.
 
     - company: Oddball
       link: 'https://oddball.io'
-      tags: Full-time, Remote
+      tags: Full-time
       date: 2024.06 - 2025.06
       role: Associate Software Engineer
       location: Remote
       description: |
         + Developed backend logic and RSpec coverage for Medicare enrollment transition handling, spanning nearly all of the project's 35 scenarios.
         + Upgraded the application from Rails 7.0 to 7.1, including dependency upgrades, test framework migration, and ongoing CVE remediation across backend dependencies.
-        + Authored a discovery document comparing background job architectures to support future infrastructure decisions.
         + Participated in three production incident responses via PagerDuty, coordinating with operations teams and CMS stakeholders on bridge calls.
-        + Refactored legacy frontend components and improved accessibility labeling for Section 508 compliance.
 
     - company: Cedar Heights Elementary School
       link: 'https://ches.woodwardps.net'
@@ -133,10 +128,10 @@ experience:
       location: Woodward, Oklahoma
       description: |
         + Planned and delivered a full K-6 music curriculum, coordinating schedules, budgets, and public performances across the school year.
-        + Wrote and secured program funding: an Oklahoma Arts Council grant that brought visiting performing artists into the school, plus local grants and DonorsChoose projects that equipped the classroom with music stands, tubanos, and Orff instruments.
+        + Secured Oklahoma Arts Council, local grant, and DonorsChoose funding for visiting performing artists and classroom instruments.
 
 project:
-  show: true
+  show: false
   order: 3
   title: Projects
   description: |
@@ -204,7 +199,6 @@ skill:
       item:
         - JavaScript / TypeScript
         - React
-        - HTML/CSS
 
     - name: Infrastructure & Delivery
       item:
@@ -246,7 +240,7 @@ education:
       description: |
 
 certificate:
-  show: true
+  show: false
   order: 6
   title: Courses and Books
   description: |
@@ -272,33 +266,12 @@ certificate:
       description: | 
         + A Ruby on Rails Learning Path that built projects using Ruby, Rails 7, Turbo, SQL, AWS S3, Tailwind-CSS, ActionText, ActiveStorage, ActiveRecord Encryption, pagination, GitHub Actions CI/CD.
 
-    - name: Programming Ruby 3.2 5th edition   
-      issuer: The Pragmatic Programmer
-      date: 2023.09
-      link: 'https://pragprog.com/titles/ruby5/programming-ruby-3-2-5th-edition/'
-      description: |
-        + Further learned how Ruby is an object-oriented language. Most notably, Arrays, Loops, Methods, Inheritance, and Metaprogramming practices within the Ruby language. And the ways to define, test, and debug code. 
-
-    - name: Agile Web Development with Rails 7
-      issuer: The Pragmatic Programmer 
-      date: 2023.08
-      link: 'https://pragprog.com/titles/rails7/agile-web-development-with-rails-7/'
-      description: |
-        + Solidified how the MVC architecture works. Built an international storefront in English and Spanish. Learned how to hotwire a side-panel cart feature using partial templates, turbo-stream, Action Cable, Websockets, and caching. 
- 
     - name: Backend Engineer
       issuer: Codecademy
       date: 2023.07
       link: 'https://www.codecademy.com/profiles/AshleyBoehs'
       description: |
-        + Learned HTML, CSS, Javascript, PostgreSQL, GitHub, API Development, Swagger, Security, Infrastructure, Scalability, and Caching techniques to enhance efficiency.
-    
-    - name: Learn Ruby Course
-      issuer: Codecademy
-      date: 2023.02
-      link: 'https://www.codecademy.com/profiles/AshleyBoehs/certificates/1c05e0382bc5681c824c4cbe85c126fd'
-      description: |
-        Learned the basics of Ruby programming.
+        + HTML, CSS, Javascript, PostgreSQL, GitHub, API Development, Security, Infrastructure, Scalability, and Caching.
 
 publication:
   show: false
@@ -373,11 +346,11 @@ patent:
     + Foo Bar. 2022. Example patent name two. US 654321, filed Oct 3, 2022, and issued Nov 15, 2022.
 
 organization:
-  show: true
+  show: false
   order: 10
   title: Organizations
   description: |
-     Outside of my professional pursuits, I have actively participated in various community outreach programs, demonstrating my commitment to making a positive impact beyond the workplace. I've also taken on leadership roles within community theatre, showcasing my ability to collaborate and inspire as an actor and musical director. These experiences have honed my communication skills and fostered a deep appreciation for teamwork and synchronization. 
+     Outside of my professional pursuits, I have actively participated in various community outreach programs, demonstrating my commitment to making a positive impact beyond the workplace. I've also taken on leadership roles within community theatre, showcasing my ability to collaborate and inspire as an actor and musical director. These experiences have honed my communication skills and fostered a deep appreciation for teamwork and synchronization.
 
 language:
   show: false
@@ -395,7 +368,7 @@ language:
       level: Professional
 
 interest:
-  show: true
+  show: false
   order: 12
   title: Interests
   description: |
@@ -407,7 +380,7 @@ interest:
       link: 'https://pragprog.com/titles/ruby5/programming-ruby-3-2-5th-edition/'
 
 evaluation:
-  show: true
+  show: false
   order: 13
   title: Self-evaluation
   description: |
@@ -416,7 +389,7 @@ evaluation:
       I take immense pride in the quality of my work, combining meticulous attention to detail with a solid commitment to efficiency.
 
     **Commitment to Growth:**
-      An unwavering belief in continuous education drives my professional journey. While my career in coding is just beginning, I recognize the importance of ongoing improvement. To bridge any gaps in my skill set, I have actively immersed myself in a variety of resources, encompassing books, articles, and online tutorials. This proactive strategy propels me forward, enabling me to evolve and remain at the forefront of my industry. 
+      An unwavering belief in continuous education drives my professional journey. While my career in coding is just beginning, I recognize the importance of ongoing improvement. To bridge any gaps in my skill set, I have actively immersed myself in a variety of resources, encompassing books, articles, and online tutorials. This proactive strategy propels me forward, enabling me to evolve and remain at the forefront of my industry.
 
     **Ready to Embrace Backend Development:**
        Driven by a passion for creating efficient solutions, I am enthusiastic about the intricacies of backend development. Given the chance to refine systems that power applications resonates deeply with me as a structured thinker and problem solver.
@@ -425,7 +398,7 @@ evaluation:
        With a rich education and community involvement background, I eagerly look forward to contributing my unique perspective to a backend software development role. I am excited by the opportunity to learn from experienced professionals, make a tangible impact on projects, and continue my growth journey in a new domain.
   
 reference:
-  show: true
+  show: false
   order: 14
   title: References
   description: |
